@@ -14,19 +14,19 @@ import math
 ## comando gia' pronto, utilizzabile quando le parti
 ## precedenti sono completate
 
-def V(x):
+def V(xi):
 ##S1 da riempire     
     return 0
 
-def b(eps,x):
+def b(eps,xi):
 ##S1 da riempire
 ##   calcolo di b a partire a E (eps), x e h (globale)    
     return 0
 
 def numerov(n1,n2,eps):
 ##S1/S2 da completare: riempe i valori di psi(xi) da i=n1 a i=n2 (compresi entrambi)
-    psi = np.array(xi)  ## copio xi in psi
-    j   = 1            ## intero che definisce incremento: indice i, i+j,i+2*j -> i, i+1, i+2
+    psi = np.array(xi)*0  ## copio xi in psi e ne annullo le componenti
+    j   = 1               ## intero che definisce incremento: indice i, i+j,i+2*j -> i, i+1, i+2
 ##S2     definisco indice j in modo che 1 se n2>n1, -1 se n2<n1 (vedi sign di numpy)
 ##S1/S2  fornisco i primi due valori di psi
 ##S1/S2  implemento Numerov
