@@ -20,7 +20,7 @@ def V(xi):
 
 def b(eps,xi):
 ##S1 da riempire
-##   calcolo di b a partire a E (eps), x e h (globale)    
+##   calcolo di b a partire a E (eps), xi e h (globale)    
     return 0
 
 def numerov(n1,n2,eps):
